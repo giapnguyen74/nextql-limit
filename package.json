@@ -1,6 +1,6 @@
 {
 	"name": "nextql-limit",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "NextQL plugin for protect against excessive calls",
 	"homepage": "https://github.com/giapnguyen74/nextql-limit",
 	"author": {
