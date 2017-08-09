@@ -8,15 +8,12 @@
 		"email": "giapnguyen74@gmail.com",
 		"url": ""
 	},
-	"files": [
-		"lib"
-	],
+	"files": ["lib"],
 	"main": "lib/index.js",
-	"keywords": [
-		"nextql",
-		"nextql-plugin"
-	],
+	"keywords": ["nextql", "nextql-plugin"],
 	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-preset-env": "^1.6.0",
 		"eslint": "^4.1.0",
 		"eslint-config-xo-space": "^0.16.0",
 		"jest": "^20.0.4",
@@ -24,8 +21,9 @@
 		"nsp": "^2.6.3"
 	},
 	"scripts": {
-		"prepublish": "nsp check",
+		"prepublish": "nsp check && npm run compile",
 		"pretest": "eslint . --fix",
+		"compile": "babel -d lib/ src/",
 		"test": "jest"
 	},
 	"eslintConfig": {
