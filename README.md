@@ -8,7 +8,8 @@ There are some solutions:
 - [Resource quotas](https://developer.github.com/v4/guides/resource-limitations/): limit how many information could be return. The solution could be deploy at bussiness logic layer.
 - Limit request size: limit based on query shape.
 
-The plugin implemented based on the last solution. The idea is very simple, it calculate query's metric: how many method calls and how many fields requested. If those metric out of limit, it stop execution and throw execptions.
+The plugin implemented based on the last solution. The idea is very simple, it calculate query's metric: how many method calls and how many fields requested. If those metric out of limit, it stop execution and throw execptions. Nextql-limit iterate through javascript object properties, it should be very fast.
+
 
 ## Installation
 
