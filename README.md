@@ -1,6 +1,6 @@
 # nextql-limit [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > NextQL plugin for protect against excessive calls.
-NextQL, [GraphQL](http://graphql.org/) or any data query layer; vulnerable for exessive or abusive calls ( or denial of service attacks ) when used to provide service for third-parties.
+[NextQL](https://github.com/giapnguyen74/nextql), [GraphQL](http://graphql.org/) or any data query layer; vulnerable for exessive or abusive calls ( or denial of service attacks ) when used to provide service for third-parties.
 
 There are some solutions:
 - Rate limiting: limit how many api calls per time could be deploy at transport layer for example HTTP calls.
