@@ -1,0 +1,43 @@
+{
+	"name": "nextql-limit",
+	"version": "0.0.0",
+	"description": "NextQL plugin for protect against excessive calls",
+	"homepage": "https://github.com/giapnguyen74/nextql-limit",
+	"author": {
+		"name": "Giap Nguyen Huu",
+		"email": "giapnguyen74@gmail.com",
+		"url": ""
+	},
+	"files": [
+		"lib"
+	],
+	"main": "lib/index.js",
+	"keywords": [
+		"nextql",
+		"nextql-plugin"
+	],
+	"devDependencies": {
+		"eslint": "^4.1.0",
+		"eslint-config-xo-space": "^0.16.0",
+		"jest": "^20.0.4",
+		"jest-cli": "^20.0.4",
+		"nsp": "^2.6.3"
+	},
+	"scripts": {
+		"prepublish": "nsp check",
+		"pretest": "eslint . --fix",
+		"test": "jest"
+	},
+	"eslintConfig": {
+		"extends": "xo-space",
+		"env": {
+			"jest": true,
+			"node": true
+		}
+	},
+	"repository": "git@github.com:giapnguyen74/nextql-limit.git",
+	"jest": {
+		"testEnvironment": "node"
+	},
+	"license": "MIT"
+}
